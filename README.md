@@ -3,10 +3,15 @@ This repository is part of the CarReservation project.
 Using Angular we will develop here the View for the Car Reservation Application.
 
 This will allow us to: 
+
 manage cars to rent (add a new car, update data, delete..).
+
 manage our customers (enter information required like name, phone, country. Update information).
+
 manage car reservation for a customer.
+
 ranking customers.
+
 <!--
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
