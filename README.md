@@ -1,5 +1,18 @@
 # CarReservationApp
+This repository is part of the CarReservation project.
+Using Angular we will develop here the View for the Car Reservation Application.
 
+This will allow us to: 
+
+manage cars to rent (add a new car, update data, delete..).
+
+manage our customers (enter information required like name, phone, country. Update information).
+
+manage car reservation for a customer.
+
+ranking customers.
+
+<!--
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
 ## Development server
@@ -25,3 +38,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-->
