@@ -3,6 +3,6 @@ export interface Car{
     brand: string;
     model: string;
     type: string;
-    licenceMunber: string;
+    licenceNumber: string;
     status: string;
 }

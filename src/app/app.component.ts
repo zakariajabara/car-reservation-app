@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   }
 
   public getCars(): void {
+    console.log("get cars");
     this.carService.getCars().subscribe(
       (response: Car[]) => {
         this.cars= response;

@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Car } from './car';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { CARS } from './dummy-cars';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,15 @@ export class CarService {
 
   constructor(private http:HttpClient) { }
 
+  
   public getCars(): Observable<Car[]> {
     return this.http.get<Car[]>(`${this.apiServerUrl}/car`)
+  }
+  
+
+  getDummyCars(): Observable<Car[]> {
+    const cars= of(CARS);
+    return cars;
   }
 
   public addCar(car: Car): Observable<Car> {
