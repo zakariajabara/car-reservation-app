@@ -1,1 +1,36 @@
-<p>car-detail works!</p>
+<p>Car Detail</p>
+<div *ngIf="car">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">licenceNumber</th>
+                <th scope="col">Type</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr class=" table-primary">
+            <td scope="row">{{car.id}}</td>
+            <td>{{ car.brand}}</td>
+            <td>{{ car.model}}</td>
+            <td>{{ car.licenceNumber}}</td>
+            <td>{{ car.type}}</td>
+            <td>{{car.status}}</td><nav></nav>
+          </tr>  
+        </tbody>
+    
+    </table>
+
+    <nav>
+        <a routerLink="">Rent</a>
+    </nav>
+</div>
+<p>Reservation</p>
+<div></div>
+<p>History</p>
+
+
+<button type="button" (click)="goBack()">Zurück</button>

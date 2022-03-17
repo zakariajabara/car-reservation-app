@@ -1,4 +1,4 @@
-<h2>My Heroes</h2>
+<!--
 <ul class="cars">
 <li *ngFor="let car of cars">
     <button [class.selected]="car === selectedCar" type="button" (click)="onSelect(car)">
@@ -11,27 +11,28 @@
     
   </li>
 </ul>
-
+-->
+<div>
+  <br/>
 <table class="table table-striped table-hover">
     <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Brand</th>
         <th scope="col">Model</th>
-        <th scope="col">LicenceNumber</th>
-        <th scope="col">Type</th>
+            <th scope="col">Type</th>
         <th scope="col">Status</th>
       </tr>
     </thead>
     <tbody>
      <tr *ngFor="let car of cars">
-        <td scope="row" class="badge">{{car.id}}</td>
+        <td scope="row"><a routerLink="/car/detail/{{car.id}}"><span class="badge">Edit</span></a></td>
         <td>{{ car.brand}}</td>
         <td>{{ car.model}}</td>
-        <td>{{ car.licenceNumber}}</td>
-        <td>{{ car.type}}</td>
-        <td>{{car.status}}</td>
+            <td>{{ car.type}}</td>
+        <td>{{car.status}}</td><nav></nav>
       </tr>  
     </tbody>
 
 </table>
+</div>

@@ -14,6 +14,10 @@ export class CarService {
 
   constructor(private http:HttpClient) { }
 
+  public getCar(id: number): Observable<Car> {
+    const car = CARS.find(c => c.id= id)!;
+    return of(car);
+  }
   
   public getCars(): Observable<Car[]> {
     return this.http.get<Car[]>(`${this.apiServerUrl}/car`)
